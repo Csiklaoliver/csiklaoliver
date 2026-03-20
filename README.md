@@ -24,14 +24,11 @@
 
 ### `👋` About
 
-I design and build products end-to-end — from 3D renders in Blender to full-stack apps on a VPS.
+17, from Hungary. I spend most of my time bouncing between Blender and VS Code — making 3D stuff and building web apps that I'd actually want to use.
 
-Everything I ship has to look exceptional and work flawlessly.
-I don't do generic. I don't do half-baked.
+Right now I'm working on **[Lil' Blob Pack](https://blobpack.oliverprojects.tech)** — free 3D mascots for apps. It started as a random idea and now I can't stop adding more.
 
-Currently focused on **[Lil' Blob Pack](https://blobpack.oliverprojects.tech)** — a growing collection of free 3D mascots for your favourite apps.
-
-Building in public. Always cooking something new.
+I care way too much about how things look and feel. If the UI isn't clean, I'm not shipping it.
 
 </td>
 <td width="40%" valign="top" align="center">
