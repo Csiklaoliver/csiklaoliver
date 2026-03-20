@@ -1,15 +1,55 @@
-<svg width="860" height="160" viewBox="0 0 860 160" xmlns="http://www.w3.org/2000/svg">
+<svg width="860" height="200" viewBox="0 0 860 200" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600&amp;family=Nunito:wght@700&amp;display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600&amp;family=Nunito:wght@700;800&amp;display=swap');
     </style>
     <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%"   stop-color="#a78bfa"/>
       <stop offset="50%"  stop-color="#34d399"/>
       <stop offset="100%" stop-color="#60a5fa"/>
     </linearGradient>
+    <radialGradient id="orb1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orb2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#34d399" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#34d399" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orb3" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#60a5fa" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#60a5fa" stop-opacity="0"/>
+    </radialGradient>
   </defs>
-  <rect width="860" height="160" fill="#07070f" rx="16"/>
-  <text x="40" y="80" font-family="Fredoka, sans-serif" font-size="52" font-weight="600" fill="url(#grad)">csiklaoliver</text>
-  <text x="42" y="118" font-family="Nunito, sans-serif" font-size="17" font-weight="700" fill="#ffffff60">3D artist · web developer · builder of small joyful things</text>
+
+  <!-- Background -->
+  <rect width="860" height="200" fill="#07070f" rx="16"/>
+
+  <!-- Orbs -->
+  <ellipse cx="80"  cy="60"  rx="140" ry="140" fill="url(#orb1)"/>
+  <ellipse cx="760" cy="160" rx="160" ry="160" fill="url(#orb2)"/>
+  <ellipse cx="500" cy="100" rx="120" ry="120" fill="url(#orb3)"/>
+
+  <!-- Subtle grid dots -->
+  <pattern id="dots" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+    <circle cx="1" cy="1" r="1" fill="#ffffff" opacity="0.03"/>
+  </pattern>
+  <rect width="860" height="200" fill="url(#dots)" rx="16"/>
+
+  <!-- Name -->
+  <text x="44" y="98" font-family="Fredoka, sans-serif" font-size="58" font-weight="600" fill="url(#grad)">csiklaoliver</text>
+
+  <!-- Tagline -->
+  <text x="46" y="138" font-family="Nunito, sans-serif" font-size="16" font-weight="700" fill="#ffffff55">3D artist · web developer · builder of small joyful things</text>
+
+  <!-- Location pill -->
+  <rect x="46" y="155" width="118" height="26" rx="13" fill="#ffffff06" stroke="#ffffff10" stroke-width="1"/>
+  <text x="84" y="173" font-family="Nunito, sans-serif" font-size="12" font-weight="800" fill="#ffffff40">🇭🇺 Hungary</text>
+
+  <!-- Status pill -->
+  <rect x="174" y="155" width="148" height="26" rx="13" fill="#34d39910" stroke="#34d39930" stroke-width="1"/>
+  <circle cx="191" cy="168" r="4" fill="#34d399">
+    <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <text x="201" y="173" font-family="Nunito, sans-serif" font-size="12" font-weight="800" fill="#34d399aa">open to collabs</text>
 </svg>
