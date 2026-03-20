@@ -24,11 +24,11 @@
 
 ### `👋` About
 
-17, from Hungary. I spend most of my time bouncing between Blender and VS Code — making 3D stuff and building web apps that I'd actually want to use.
+17, from Hungary. I spend most of my time bouncing between Blender and VS Code. making 3D stuff and building web apps that I'd actually want to use.
 
 Right now I'm working on **[Lil' Blob Pack](https://blobpack.oliverprojects.tech)** — free 3D mascots for apps. It started as a random idea and now I can't stop adding more.
 
-I care way too much about how things look and feel. If the UI isn't clean, I'm not shipping it.
+I care way too much about how things look and feel. If the UI isn't clean, I'm not publishing it.
 
 </td>
 <td width="40%" valign="top" align="center">
