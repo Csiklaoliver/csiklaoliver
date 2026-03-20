@@ -1,0 +1,15 @@
+<svg width="860" height="160" viewBox="0 0 860 160" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600&amp;family=Nunito:wght@700&amp;display=swap');
+    </style>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#a78bfa"/>
+      <stop offset="50%"  stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+  </defs>
+  <rect width="860" height="160" fill="#07070f" rx="16"/>
+  <text x="40" y="80" font-family="Fredoka, sans-serif" font-size="52" font-weight="600" fill="url(#grad)">csiklaoliver</text>
+  <text x="42" y="118" font-family="Nunito, sans-serif" font-size="17" font-weight="700" fill="#ffffff60">3D artist · web developer · builder of small joyful things</text>
+</svg>
