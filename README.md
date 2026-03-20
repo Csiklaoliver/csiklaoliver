@@ -58,7 +58,7 @@ Building in public. Always cooking something new.
 
 <div align="center">
 
-[![trophy](https://github-profile-trophy.vercel.app/?username=csiklaoliver&theme=onestar&no-frame=true&no-bg=true&column=4&margin-w=15&margin-h=15)](https://github.com/csiklaoliver)
+[![trophy](https://github-profile-trophy.vercel.app/?username=Csiklaoliver&theme=darkhub&no-frame=true&no-bg=true&column=4&margin-w=15&margin-h=15)](https://github.com/Csiklaoliver)
 
 </div>
 
