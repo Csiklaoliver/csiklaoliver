@@ -1,4 +1,4 @@
-<svg width="860" height="280" viewBox="0 0 860 280" xmlns="http://www.w3.org/2000/svg">
+<svg width="860" height="300" viewBox="0 0 860 300" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&amp;family=Nunito:wght@700;800;900&amp;display=swap');
@@ -9,91 +9,115 @@
       <stop offset="100%" stop-color="#60a5fa"/>
     </linearGradient>
     <linearGradient id="gradLine" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%"   stop-color="#a78bfa" stop-opacity="0.6"/>
-      <stop offset="50%"  stop-color="#34d399" stop-opacity="0.3"/>
+      <stop offset="0%"   stop-color="#a78bfa" stop-opacity="0.5"/>
+      <stop offset="50%"  stop-color="#34d399" stop-opacity="0.2"/>
       <stop offset="100%" stop-color="#60a5fa" stop-opacity="0"/>
     </linearGradient>
+    <linearGradient id="gradBottom" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#a78bfa" stop-opacity="0.2"/>
+      <stop offset="50%"  stop-color="#34d399" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#60a5fa" stop-opacity="0.2"/>
+    </linearGradient>
     <radialGradient id="orb1" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.18"/>
+      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.2"/>
       <stop offset="100%" stop-color="#a78bfa" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="orb2" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#34d399" stop-opacity="0.15"/>
+      <stop offset="0%" stop-color="#34d399" stop-opacity="0.16"/>
       <stop offset="100%" stop-color="#34d399" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="orb3" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#60a5fa" stop-opacity="0.12"/>
+      <stop offset="0%" stop-color="#60a5fa" stop-opacity="0.14"/>
       <stop offset="100%" stop-color="#60a5fa" stop-opacity="0"/>
     </radialGradient>
     <filter id="glow">
-      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softglow">
+      <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
       <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
   </defs>
 
   <!-- Background -->
-  <rect width="860" height="280" fill="#0a0a14" rx="16"/>
+  <rect width="860" height="300" fill="#0a0a14" rx="16"/>
 
-  <!-- Subtle noise texture via dots -->
-  <pattern id="grid" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse">
-    <circle cx="1" cy="1" r="0.6" fill="#ffffff" opacity="0.04"/>
+  <!-- Grid -->
+  <pattern id="grid" x="0" y="0" width="28" height="28" patternUnits="userSpaceOnUse">
+    <circle cx="1" cy="1" r="0.5" fill="#ffffff" opacity="0.035"/>
   </pattern>
-  <rect width="860" height="280" fill="url(#grid)" rx="16"/>
+  <rect width="860" height="300" fill="url(#grid)" rx="16"/>
 
   <!-- Animated orbs -->
-  <ellipse cx="100" cy="80" rx="180" ry="180" fill="url(#orb1)">
-    <animate attributeName="cx" values="100;130;100" dur="8s" repeatCount="indefinite"/>
-    <animate attributeName="cy" values="80;50;80" dur="8s" repeatCount="indefinite"/>
+  <ellipse cx="80" cy="60" rx="200" ry="200" fill="url(#orb1)">
+    <animate attributeName="cx" values="80;120;80" dur="9s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="60;30;60" dur="9s" repeatCount="indefinite"/>
   </ellipse>
-  <ellipse cx="740" cy="220" rx="200" ry="200" fill="url(#orb2)">
-    <animate attributeName="cx" values="740;710;740" dur="10s" repeatCount="indefinite"/>
-    <animate attributeName="cy" values="220;250;220" dur="10s" repeatCount="indefinite"/>
+  <ellipse cx="770" cy="240" rx="220" ry="220" fill="url(#orb2)">
+    <animate attributeName="cx" values="770;730;770" dur="11s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="240;270;240" dur="11s" repeatCount="indefinite"/>
   </ellipse>
-  <ellipse cx="450" cy="140" rx="150" ry="150" fill="url(#orb3)">
-    <animate attributeName="cx" values="450;480;450" dur="12s" repeatCount="indefinite"/>
+  <ellipse cx="430" cy="150" rx="170" ry="170" fill="url(#orb3)">
+    <animate attributeName="cx" values="430;470;430" dur="13s" repeatCount="indefinite"/>
   </ellipse>
 
-  <!-- Floating blobs -->
-  <circle cx="780" cy="50" r="6" fill="#a78bfa" opacity="0.15">
-    <animate attributeName="cy" values="50;40;50" dur="4s" repeatCount="indefinite"/>
+  <!-- Floating particles -->
+  <circle cx="760" cy="40" r="7" fill="#a78bfa" opacity="0.12">
+    <animate attributeName="cy" values="40;28;40" dur="4s" repeatCount="indefinite"/>
   </circle>
-  <circle cx="810" cy="80" r="4" fill="#34d399" opacity="0.12">
-    <animate attributeName="cy" values="80;90;80" dur="3s" repeatCount="indefinite"/>
+  <circle cx="800" cy="75" r="4.5" fill="#34d399" opacity="0.1">
+    <animate attributeName="cy" values="75;88;75" dur="3.5s" repeatCount="indefinite"/>
   </circle>
-  <circle cx="750" cy="35" r="3" fill="#60a5fa" opacity="0.15">
-    <animate attributeName="cy" values="35;28;35" dur="5s" repeatCount="indefinite"/>
+  <circle cx="730" cy="28" r="3" fill="#60a5fa" opacity="0.14">
+    <animate attributeName="cy" values="28;18;28" dur="5s" repeatCount="indefinite"/>
   </circle>
-  <circle cx="700" cy="65" r="5" fill="#a78bfa" opacity="0.08">
-    <animate attributeName="cy" values="65;58;65" dur="6s" repeatCount="indefinite"/>
+  <circle cx="690" cy="58" r="5.5" fill="#a78bfa" opacity="0.07">
+    <animate attributeName="cy" values="58;48;58" dur="6s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="820" cy="110" r="3.5" fill="#34d399" opacity="0.09">
+    <animate attributeName="cy" values="110;100;110" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="660" cy="35" r="2.5" fill="#60a5fa" opacity="0.11">
+    <animate attributeName="cy" values="35;42;35" dur="3s" repeatCount="indefinite"/>
   </circle>
 
-  <!-- Gradient line separator -->
-  <rect x="46" y="175" width="320" height="1.5" rx="1" fill="url(#gradLine)"/>
+  <!-- Name with glow -->
+  <text x="46" y="105" font-family="Fredoka, sans-serif" font-size="68" font-weight="700" fill="url(#grad)" filter="url(#glow)">csiklaoliver</text>
 
-  <!-- Name -->
-  <text x="46" y="100" font-family="Fredoka, sans-serif" font-size="64" font-weight="700" fill="url(#grad)" filter="url(#glow)">csiklaoliver</text>
+  <!-- Subtitle line -->
+  <rect x="48" y="125" width="280" height="1.5" rx="1" fill="url(#gradLine)"/>
 
   <!-- Role -->
-  <text x="48" y="140" font-family="Nunito, sans-serif" font-size="18" font-weight="800" fill="#ffffff45" letter-spacing="0.5">3D artist · web developer · builder of small joyful things</text>
+  <text x="48" y="155" font-family="Nunito, sans-serif" font-size="17" font-weight="800" fill="#ffffff40" letter-spacing="0.5">3D artist · web developer · maker</text>
 
   <!-- Tagline -->
-  <text x="48" y="165" font-family="Nunito, sans-serif" font-size="13" font-weight="700" fill="#ffffff25" letter-spacing="0.3">shipping products that look good and feel good to use</text>
+  <text x="48" y="180" font-family="Nunito, sans-serif" font-size="13" font-weight="700" fill="#ffffff20" letter-spacing="0.3">shipping products that look good and feel good to use</text>
 
-  <!-- Pill: Hungary -->
-  <rect x="48" y="195" width="108" height="30" rx="15" fill="#ffffff05" stroke="#ffffff0f" stroke-width="1"/>
-  <text x="80" y="215" font-family="Nunito, sans-serif" font-size="12" font-weight="800" fill="#ffffff35" letter-spacing="0.5">🇭🇺 Hungary</text>
+  <!-- Pills row -->
+  <!-- Hungary -->
+  <rect x="48" y="205" width="108" height="30" rx="15" fill="#ffffff05" stroke="#ffffff0f" stroke-width="1"/>
+  <text x="80" y="225" font-family="Nunito, sans-serif" font-size="12" font-weight="800" fill="#ffffff35">🇭🇺 Hungary</text>
 
-  <!-- Pill: Open to collabs -->
-  <rect x="166" y="195" width="156" height="30" rx="15" fill="#34d39908" stroke="#34d39925" stroke-width="1"/>
-  <circle cx="184" cy="210" r="4" fill="#34d399" opacity="0.8">
+  <!-- Open to collabs -->
+  <rect x="166" y="205" width="156" height="30" rx="15" fill="#34d39908" stroke="#34d39925" stroke-width="1"/>
+  <circle cx="184" cy="220" r="4" fill="#34d399" opacity="0.8">
     <animate attributeName="opacity" values="0.8;0.2;0.8" dur="2s" repeatCount="indefinite"/>
   </circle>
-  <text x="196" y="215" font-family="Nunito, sans-serif" font-size="12" font-weight="800" fill="#34d39980" letter-spacing="0.5">open to collabs</text>
+  <text x="196" y="225" font-family="Nunito, sans-serif" font-size="12" font-weight="800" fill="#34d39980">open to collabs</text>
 
-  <!-- Pill: Email -->
-  <rect x="332" y="195" width="216" height="30" rx="15" fill="#a78bfa06" stroke="#a78bfa20" stroke-width="1"/>
-  <text x="349" y="215" font-family="Nunito, sans-serif" font-size="12" font-weight="800" fill="#a78bfa60" letter-spacing="0.3">✉ info@oliverprojects.tech</text>
+  <!-- Email -->
+  <rect x="332" y="205" width="216" height="30" rx="15" fill="#a78bfa06" stroke="#a78bfa20" stroke-width="1"/>
+  <text x="349" y="225" font-family="Nunito, sans-serif" font-size="12" font-weight="800" fill="#a78bfa60">✉ info@oliverprojects.tech</text>
 
-  <!-- Bottom accent line -->
-  <rect x="0" y="276" width="860" height="4" rx="0" fill="url(#grad)" opacity="0.15"/>
+  <!-- Website -->
+  <rect x="558" y="205" width="180" height="30" rx="15" fill="#60a5fa06" stroke="#60a5fa20" stroke-width="1"/>
+  <text x="575" y="225" font-family="Nunito, sans-serif" font-size="12" font-weight="800" fill="#60a5fa60">🌐 oliverprojects.tech</text>
+
+  <!-- Version pill bottom right -->
+  <rect x="730" y="260" width="100" height="24" rx="12" fill="#ffffff04" stroke="#ffffff08" stroke-width="1"/>
+  <text x="753" y="277" font-family="Nunito, sans-serif" font-size="10" font-weight="800" fill="#ffffff20">v2026.03</text>
+
+  <!-- Bottom gradient line -->
+  <rect x="0" y="296" width="860" height="4" rx="0" fill="url(#gradBottom)"/>
 </svg>
