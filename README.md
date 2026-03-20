@@ -54,12 +54,6 @@ Building in public. Always cooking something new.
 
 <br/>
 
-<br/>
-
----
-
-<br/>
-
 ## `✦` Featured — Lil' Blob Pack
 
 <br/>
